@@ -11,11 +11,10 @@ const increment = () => {
   refs.counterRef.textContent = counterValue;
 };
 
-const decrement = () => {
-    if (counterValue >= 1) {
+const decrement = () => {    
         counterValue -= 1;
         refs.counterRef.textContent = counterValue;
-    }  
+    
 };
 
 refs.btnIncr.addEventListener('click', increment);
